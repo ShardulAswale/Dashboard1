@@ -3,6 +3,7 @@ import { Grid, Typography } from "@mui/material";
 import StatsCards from "./StatsCards/StatsCards";
 import StatsCards2 from "./StatsCards/StatsCards2";
 import SalesTable from "./StatsCards/SalesTable";
+import TopBar from "./TopBar";
 
 const Dashboard = () => {
   return (
@@ -35,7 +36,7 @@ const Dashboard = () => {
         md={10}
         style={{ background: "#F5F5F5", padding: "16px", minHeight: "100vh" }}
       >
-        <Grid container direction="column"spacing={3}>
+        <Grid container direction="column" spacing={3}>
           {/* {Array(9)
             .fill()
             .map((_, index) => (
@@ -43,6 +44,9 @@ const Dashboard = () => {
                 <WidgetComp />
               </Grid>
             ))} */}
+          <Grid item>
+            <TopBar />
+          </Grid>
           <Grid item>
             <StatsCards />
           </Grid>
