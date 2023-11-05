@@ -17,7 +17,7 @@ const StatsCards = () => {
           <CardItem
             icon="Article"
             title="Orders"
-            value="350"
+            value="400"
             growth="+50 (this month)"
           />
         </Grid>
